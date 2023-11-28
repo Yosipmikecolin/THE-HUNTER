@@ -8,6 +8,14 @@
   overflow-y: auto;
 }
 
+.logo {
+  position: absolute;
+  top: 80px;
+  z-index: 100;
+  left: 5%;
+  cursor: pointer;
+}
+
 .info {
   position: absolute;
   left: 5%;
@@ -201,6 +209,9 @@ video {
 }
 
 @media (max-width: 908px) {
+  .logo {
+    display: none;
+  }
   .container-habit {
     display: none;
   }

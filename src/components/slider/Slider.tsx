@@ -8,6 +8,7 @@ import React from "react";
 import { getMap, getVideo } from "../../utils/fuctions";
 import StateConservation from "../state-conservation/StateConservation";
 import { CgArrowLongRight } from "react-icons/cg";
+import Logo from "../../../public/logo2.png";
 import "animate.css";
 import "./Slider.css";
 import Species from "../../views/species/Species";
@@ -61,6 +62,9 @@ const Slider = () => {
 
   return (
     <section className="slider">
+      <div className="logo">
+        <img src={Logo} width={60} />
+      </div>
       <div className="slider-1" style={{ opacity: item === 1 ? 0.5 : 0 }} />
       <div className="slider-2" style={{ opacity: item === 2 ? 0.5 : 0 }} />
       <div className="slider-3" style={{ opacity: item === 3 ? 0.5 : 0 }} />
